@@ -239,7 +239,6 @@ function signup(uname, password) {
     "sign up", {
       username: uname,
       password: password,
-      captcha: document.getElementById("captext1").value,
       token: localStorage.getItem("token"),
     },
     (status) => {
