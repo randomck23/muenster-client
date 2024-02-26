@@ -703,12 +703,6 @@ socket.on("sys message", function(data) {
   }
 });
 
-function loadCap() {
-  socket.emit("get captcha", {}, (cap) => {
-    document.getElementById("cap1").src = cap;
-  });
-}
-
 function changeColor() {
   socket.emit(
     "change color", {
